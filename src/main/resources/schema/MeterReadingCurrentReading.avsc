@@ -1,0 +1,15 @@
+{
+  "namespace": "cdr.types",
+  "type": "record",
+  "name": "MeterReadingCurrentReading",
+  "fields": [
+    {"name": "currentReadingID","type": "int"},
+    {"name": "currentReading","type": "float"},
+    {"name": "totalReading","type": "float"},
+    {"name": "meterID","type": "int"},
+    {"name": "lastUpdate","type": {"type":"long", "logicalType":"timestamp-millis",
+      "connect.version":1,"connect.name":"org.apache.kafka.connect.data.Timestamp"}
+     }
+  ],
+  "connect.version":1,"connect.name":"cdr.types.MeterReadingCurrentReading"
+}

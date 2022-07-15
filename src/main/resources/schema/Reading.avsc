@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "namespace": "cdr.types",
+  "name": "Reading",
+  "fields": [
+    {"name": "reading","type": "float"},
+    {"name": "meterSerial","type": "string"},
+    {"name": "lastUpdate","type":  {"type":"long", "logicalType":"timestamp-millis",
+      "connect.version":1,"connect.name":"org.apache.kafka.connect.data.Timestamp"}}
+  ],
+  "connect.version":1,"connect.name":"cdr.types.Reading"
+}

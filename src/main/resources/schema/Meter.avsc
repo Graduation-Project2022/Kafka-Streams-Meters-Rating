@@ -1,0 +1,15 @@
+{
+  "namespace": "cdr.types",
+  "type": "record",
+  "name": "Meter",
+  "fields": [
+    {"name": "meterID","type":"int"},
+    {"name": "meterSerial","type":"string"},
+    {"name": "meterType","type": "string"},
+    {"name": "lastUpdate","type": {"type":"long", "logicalType":"timestamp-millis",
+      "connect.version":1,"connect.name":"org.apache.kafka.connect.data.Timestamp"}}
+  ],
+  "connect.version":1,"connect.name":"cdr.types.Meter"
+}
+
+{"meterID": "123", "meterSerial": "SER00000001", meterType: "H", "lastUpdate": "1232343243"}
